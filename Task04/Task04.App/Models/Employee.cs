@@ -4,11 +4,9 @@ namespace Task04.App.Models
     {
    
         public const decimal MaxSalary = 100_000m;
-
         private readonly int _id;
         private string _name;
         private decimal _salary;
-
         private string[] _skills;
 
         public int Id
@@ -54,7 +52,6 @@ namespace Task04.App.Models
                     throw new ArgumentException(
                         $"Salary cannot be greater than {MaxSalary}.");
                 }
-
                 _salary = value;
             }
         }

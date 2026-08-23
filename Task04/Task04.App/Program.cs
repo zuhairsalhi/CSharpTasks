@@ -22,9 +22,9 @@ namespace Task04.App
                 300
             );
 
-            Console.WriteLine($"ID: {employee2.Id}");
-            Console.WriteLine($"Name: {employee2.Name}");
-            Console.WriteLine($"Salary: {employee2.Salary}");
+            Console.WriteLine($"ID:{employee2.Id}");
+            Console.WriteLine($"Name:{employee2.Name}");
+            Console.WriteLine($"Salary:{employee2.Salary}");
 
             Console.WriteLine();
 
@@ -43,9 +43,9 @@ namespace Task04.App
             Employee employee3 = new Employee(employee2);
 
             Console.WriteLine("Copied Employee:");
-            Console.WriteLine($"ID: {employee3.Id}");
-            Console.WriteLine($"Name: {employee3.Name}");
-            Console.WriteLine($"Salary: {employee3.Salary}");
+            Console.WriteLine($"ID:{employee3.Id}");
+            Console.WriteLine($"Name:{employee3.Name}");
+            Console.WriteLine($"Salary:{employee3.Salary}");
 
             Console.WriteLine();
 
@@ -55,12 +55,12 @@ namespace Task04.App
             }
             catch (ArgumentException ex)
             {
-                Console.WriteLine($"Validation Error: {ex.Message}");
+                Console.WriteLine($"Validation Error:{ex.Message}");
             }
 
             Console.WriteLine();
 
-            Console.WriteLine($"Maximum Salary: {Employee.MaxSalary}");
+            Console.WriteLine($"Maximum Salary:{Employee.MaxSalary}");
         }
     }
 }

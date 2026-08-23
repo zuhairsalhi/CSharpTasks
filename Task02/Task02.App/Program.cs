@@ -41,7 +41,7 @@ namespace Task02.App
 
         static void ArrayOperations()
         {
-            int[] numbers = { 10, 5, 30, 8, 20, 15, 2, 40, 25, 12 };
+            int[] numbers = { 10,5,30,8,20,15,2,40,25,12 };
 
             Console.WriteLine();
             Console.WriteLine("Array Operations");
@@ -53,9 +53,9 @@ namespace Task02.App
             int min = FindMin(numbers);
             double average = CalculateAverage(numbers);
 
-            Console.WriteLine($"Max: {max}");
-            Console.WriteLine($"Min: {min}");
-            Console.WriteLine($"Average: {average}");
+            Console.WriteLine($"Max:{max}");
+            Console.WriteLine($"Min:{min}");
+            Console.WriteLine($"Average:{average}");
 
             ReverseArray(numbers);
 
@@ -152,7 +152,7 @@ namespace Task02.App
 
                 if (i < numbers.Length - 1)
                 {
-                    Console.Write(", ");
+                    Console.Write(" , ");
                 }
             }
 
