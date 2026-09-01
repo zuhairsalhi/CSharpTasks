@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using Task14.Services;
 
-Console.WriteLine("=== Audit Log Scanner ===");
+Console.WriteLine("Audit Log Scanner");
 Console.WriteLine();
 
 Assembly assembly = typeof(ProductService).Assembly;

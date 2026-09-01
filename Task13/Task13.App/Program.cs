@@ -6,7 +6,7 @@ namespace Task13.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Extension Methods ===");
+            Console.WriteLine("Extension Methods");
 
             string text = "hello world from csharp";
             

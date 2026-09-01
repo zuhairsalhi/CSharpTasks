@@ -101,10 +101,7 @@ Console.WriteLine("Task 21 completed successfully.");
         .First()
         .Key;
 
-    string longestWord = words
-        .OrderByDescending(word => word.Length)
-        .First();
-
+    string longestWord = words.OrderByDescending(word => word.Length).First();
 
     int sentenceCount = input.Count(
         character =>
@@ -112,8 +109,6 @@ Console.WriteLine("Task 21 completed successfully.");
             character == '!' ||
             character == '?'
     );
-
-
     return (
         wordCount,
         chars,

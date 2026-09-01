@@ -6,9 +6,7 @@ namespace Task11.App
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ValidationException(
-                    "Name cannot be empty."
-                );
+                throw new ValidationException( "Name cannot be empty." );
             }
 
             if (age < 18)

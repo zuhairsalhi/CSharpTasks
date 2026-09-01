@@ -8,6 +8,7 @@ namespace Task19.App
         static void Main()
         {
             Console.WriteLine("Task 19 File I/O");
+
             Console.WriteLine();
 
             string filePath = "contacts.txt";

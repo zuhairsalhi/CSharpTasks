@@ -41,7 +41,7 @@ namespace Task02.App
 
         static void ArrayOperations()
         {
-            int[] numbers = { 10,5,30,8,20,15,2,40,25,12 };
+            int[] numbers = {10,5,30,8,20,15,2,40,25,12};
 
             Console.WriteLine();
             Console.WriteLine("Array Operations");
