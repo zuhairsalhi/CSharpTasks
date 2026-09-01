@@ -2,34 +2,16 @@ using LibraryManagement.App.Interfaces;
 
 namespace LibraryManagement.App.Models;
 
-/// <summary>
-/// Represents a book in the library.
-/// </summary>
 public class Book : IBorrowable, ISearchable
 {
-    /// <summary>
-    /// Gets the unique identifier of the book.
-    /// </summary>
     public int Id { get; }
 
-    /// <summary>
-    /// Gets or sets the title of the book.
-    /// </summary>
     public string Title { get; set; }
 
-    /// <summary>
-    /// Gets or sets the author of the book.
-    /// </summary>
     public string Author { get; set; }
 
-    /// <summary>
-    /// Gets a value indicating whether the book is currently borrowed.
-    /// </summary>
     public bool IsBorrowed { get; private set; }
 
-    /// <summary>
-    /// Creates a new book.
-    /// </summary>
     public Book(int id, string title, string author)
     {
         if (id <= 0)
@@ -47,9 +29,7 @@ public class Book : IBorrowable, ISearchable
         IsBorrowed = false;
     }
 
-    /// <summary>
-    /// Borrows the book for a member.
-    /// </summary>
+    
     public void Borrow(Member member)
     {
         if (IsBorrowed)
@@ -74,9 +54,6 @@ public class Book : IBorrowable, ISearchable
         IsBorrowed = false;
     }
 
-    /// <summary>
-    /// Determines whether the book matches the specified search term.
-    /// </summary>
     public bool Matches(string searchTerm)
     {
         if (string.IsNullOrWhiteSpace(searchTerm))
@@ -91,9 +68,6 @@ public class Book : IBorrowable, ISearchable
                    StringComparison.OrdinalIgnoreCase);
     }
 
-    /// <summary>
-    /// Returns a string representation of the book.
-    /// </summary>
     public override string ToString()
     {
         string status = IsBorrowed ? "Borrowed" : "Available";
